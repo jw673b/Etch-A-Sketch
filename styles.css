@@ -1,0 +1,30 @@
+#container {
+    display: grid;
+    position: relative;
+    height: 960px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+
+.newDiv {
+    height: 1fr;
+    width: 1fr;
+    margin:auto;
+    background-color:white;
+}
+
+body {
+    background-color: rgb(201, 215, 230);
+    display: block;
+}
+
+#reset {
+    position:fixed;
+}
+
