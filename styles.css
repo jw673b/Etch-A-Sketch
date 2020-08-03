@@ -1,11 +1,9 @@
 #container {
     display: grid;
     position: relative;
-    height: 960px;
-    width: 960px;
-    margin-left: auto;
-    margin-right: 30px;
-    margin-top: auto;
+    height: 800px;
+    width: 800px;
+    margin: auto;
     margin-bottom: auto;
     border-style: solid;
     border-color: black;
@@ -22,9 +20,21 @@
 body {
     background-color: rgb(201, 215, 230);
     display: block;
+    text-align: center;
 }
 
-#reset {
-    position:fixed;
+button {
+    margin: 20px;
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border-color: gold;
+    border-style: solid;
+    outline: none;
 }
 

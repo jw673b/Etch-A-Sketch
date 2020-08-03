@@ -7,6 +7,8 @@ let selectGridSize;
 addButton("Select Grid Size",selectGridSize,selectGridSizeFunc);
 let setColor = document.createElement("button");
 setColor.innerHTML = "Black";
+setColor.style.color = "white";
+setColor.style.backgroundColor = "black";
 setColor.addEventListener('click', setColorFunc);
 body.appendChild(setColor);
 
@@ -31,8 +33,8 @@ function createNewDivs(numDivs) {
         const newDiv = document.createElement('div');
         container.appendChild(newDiv);     
         newDiv.classList.add("newDiv");
-        newDiv.style.height = `${960/Math.sqrt(numDivs)}px`;
-        newDiv.style.width = `${960/Math.sqrt(numDivs)}px`;
+        newDiv.style.height = `${800/Math.sqrt(numDivs)}px`;
+        newDiv.style.width = `${800/Math.sqrt(numDivs)}px`;
         if (black === true) {
             newDiv.addEventListener('mouseover', draw);
         } else {
@@ -94,6 +96,8 @@ function setColorFunc() {
     newDivs = Array.from(newDivs);
     if (black === true) {
         setColor.innerHTML = "Rainbow";
+        setColor.style.color = "blue";
+        setColor.style.backgroundColor = "pink";
         black = false;
         newDivs.forEach(div => {
             div.removeEventListener('mouseover', draw);
@@ -101,6 +105,8 @@ function setColorFunc() {
         });
     } else {
         setColor.innerHTML = "Black";
+        setColor.style.color = "white";
+        setColor.style.backgroundColor = "black";
         black = true;
         newDivs.forEach(div => {
             div.removeEventListener('mouseover', drawRainbow);
